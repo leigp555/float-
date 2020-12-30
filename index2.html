@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        list-style: none;
+      }
+     
+      
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      img {
+        height: 26px;
+        vertical-align: middle;
+      }
+      .logo {
+        display: inline-block;
+
+        float: left;
+      }
+      ol > li {
+        float: left;
+
+        display: inline-block;
+
+        margin: 0 0.5em;
+      }
+      ol {
+        height: 26px;
+        line-height: 26px;
+
+        float: left;
+      }
+
+      ul > li {
+        float: right;
+
+        margin: 0px 0.5em;
+      }
+      ul {
+        height: 26px;
+        line-height: 26px;
+
+        float: right;
+      }
+      header {
+        background-color: grey;
+      }
+
+      .content {
+        outline: 1px solid red;
+        height: 300px;
+        width: 1000px;
+        margin: 10px auto;
+      }
+      aside {
+        border: 1px solid red;
+        width: 200px;
+        height: 300px;
+        float: left;
+        background-color: red;
+      }
+      main {
+        border: 1px solid red;
+        width: 600px;
+        height: 300px;
+        float: left;
+        background-color: green;
+      }
+      .ad {
+        border: 1px solid red;
+        width: 200px;
+        height: 300px;
+        float: left;
+        background-color: blue;
+      }
+
+      .new {
+        margin-right: -12px;
+      }
+      .out {
+        outline: 1px solid blue;
+        width: 1000px;
+        margin: 10px auto;
+      }
+
+      .new > div {
+        width: 241px;
+        height: 250px;
+        border: 1px solid red;
+        float: left;
+        margin-right: 12px;
+      }
+      a>img{
+          margin-top:60px;
+          margin-left: 40px;
+          height: 85px;
+          
+      }
+    </style>
+  </head>
+  <body>
+    <header class="clearfix">
+      <div class="logo">
+        <img
+          src="https://static.xiedaimala.com/xdml/cdn/assets/black-logo-6b90d5f6165754f30be3d8469256bc824371ae8deaefc286127fb7701b7b8dc5.png"
+          alt=""
+        />
+      </div>
+      <div class="nav">
+        <ol class="">
+          <li>课程</li>
+          <li>前端培训</li>
+          <li>java培训</li>
+          <li>河马社区</li>
+        </ol>
+      </div>
+
+      <div class="a">
+        <ul>
+          <li>登录</li>
+          <li>用户</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="content ,chearfix">
+      <aside></aside>
+      <main></main>
+      <div class="ad"></div>
+    </div>
+
+    <div class="out">
+      <div class="new clearfix">
+        <div class="image">
+          <a href="javascript:;"
+            >
+            <img
+              src="//static.xiedaimala.com/xdml/image/90ee74db-3e7c-47d3-8860-30fbec11a053/2019-7-26-10-41-26.png"
+              alt=""
+          />
+        </a>
+        </div>
+        <div class="image"><a href=""></a></div>
+        <div class="image"><a href=""></a></div>
+        <div class="image"><a href=""></a></div>
+        <div><a href=""></a></div>
+        <div><a href=""></a></div>
+        <div><a href=""></a></div>
+        <div><a href=""></a></div>
+      </div>
+    </div>
+  </body>
+</html>
