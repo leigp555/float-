@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex布局</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+      img {
+        height: 26px;
+        background-color: grey;
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+      .fa {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: grey;
+      }
+      .fa {
+        justify-content: space-between;
+      }
+      .container1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .items {
+        margin: 4px;
+      }
+      .container2 {
+        display: flex;
+        align-items: center;
+      }
+      .x {
+        display: flex;
+        justify-content: center;
+      }
+
+      .container3 {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 300px;
+        width: 800px;
+      }
+      .items3 {
+        justify-content: space-around;
+      }
+      .a {
+        width: 200px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-color: red;
+      }
+      .b {
+        width: 500px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-color: green;
+      }
+      .c {
+        width: 100px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-color: blue;
+      }
+      .y {
+        display: flex;
+        justify-content: center;
+        
+      }
+
+      .container4 {
+       
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: space-between;
+        height: 800px;
+        
+
+        width: 800px;
+      }
+      .items4 {
+       border: 1px solid black;
+        height: 191px;
+        width: 191px;
+       background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fa">
+      <div class="container1">
+        <div class="items">
+          <img
+            src="https://static.xiedaimala.com/xdml/cdn/assets/black-logo-6b90d5f6165754f30be3d8469256bc824371ae8deaefc286127fb7701b7b8dc5.png"
+            alt=""
+          />
+        </div>
+        <div class="items">课程</div>
+        <div class="items">前端培训</div>
+        <div class="items">Java培训</div>
+        <div class="items">河马社区</div>
+      </div>
+      <div class="container2">
+        <div class="items">用户</div>
+        <div class="items">登录</div>
+      </div>
+    </div>
+    <div class="x">
+      <div class="container3">
+        <div class="items3 a"></div>
+        <div class="items3 b"></div>
+        <div class="items3 c"></div>
+      </div>
+    </div>
+
+    <div class="y">
+      <div class="fan">
+        <div class="container4">
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+          <div class="items4"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
