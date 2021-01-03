@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: grid;
+        /* grid-template-columns: 50px 50px auto 50px 50px; */
+        grid-template-columns: 50px 50px auto 50px 50px;
+        grid-template-rows: 50px 400px 200px;
+      width: 800px;
+      margin: 0 auto;
+      /* grid-gap: 12px; */
+      grid-row-gap: 10px;
+    }
+    .items{
+        border: 1px solid red;
+
+    }
+    .a{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+    .b{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .c{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .d{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+    .e{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    .container1{
+        display: grid;
+        grid-template-columns: 191px 191px 191px 191px;
+        grid-template-rows: 191px;
+        margin-top: 10px;
+        border: 1px solid red;
+        width: 800px;
+        margin: 0 auto;
+        grid-gap: 12px;
+        margin-top: 12px;
+    }
+    .items1{
+        border: 1px solid red;
+   margin-right: 12px;
+   width: 191px;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 800px;
+        border: 1px solid black;
+        margin: 0 auto;
+        margin-top: 10px;
+        grid-gap: 12px;
+
+    }
+    .items2{
+        border: 1px solid blue;
+       
+    }
+
+
+
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="items a"></div>
+        <div class="items b"></div>
+        <div class="items c" ></div>
+        <div class="items d" ></div>
+        <div class="items e"></div>
+    </div>
+    <div class="container1">
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+        <div class="items1"></div>
+    </div>
+
+    <div class="footer">
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+        <div class="items2"></div>
+    </div>
+</body>
+</html>
